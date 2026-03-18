@@ -24,3 +24,6 @@ require("after-dark").setup({
   italic = true,
 })
 ```
+
+___
+# Enjoy!
