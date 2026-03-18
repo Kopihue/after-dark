@@ -26,4 +26,4 @@ require("after-dark").setup({
 ```
 
 ___
-# Enjoy!
+# Enjoy! ❤️💚💙
