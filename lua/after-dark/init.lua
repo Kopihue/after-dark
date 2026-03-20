@@ -26,6 +26,7 @@ local highlights = function(opts)
 
 	-- treesitter
 	["@module.rust"] = { fg = palette.crate },
+	["@property.toml"] = { fg = palette.func },
     }
     return highlights
 end
