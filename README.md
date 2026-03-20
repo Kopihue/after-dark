@@ -26,4 +26,19 @@ require("after-dark").setup({
 ```
 
 ___
+# Note about lsp
+Lsp will highlight the words in the buffer if you don't deactivate that feature, to deativate it put this in you init.lua
+```lua
+-- disable lsp syntax highlighting
+vim.api.nvim_create_autocmd("LspAttach", {
+    callback = function(args)
+	      local client = vim.lsp.get_client_by_id(args.data.client_id)
+	      if client then
+	        client.server_capabilities.semanticTokensProvider = nil
+	      end
+    end,
+})
+```
+
+___
 # Enjoy! ❤️💚💙
