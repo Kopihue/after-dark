@@ -31,6 +31,7 @@ local highlights = function(opts)
 	["@markup.heading.2.markdown"] = { fg = palette.crate },
 	["@markup.heading.3.markdown"] = { fg = palette.type },
 	["@markup.heading.4.markdown"] = { fg = palette.keyword },
+	["@markup.list.markdown"] = { fg = palette.keyword },
     }
     return highlights
 end
