@@ -32,6 +32,14 @@ local highlights = function(opts)
 	["@markup.heading.3.markdown"] = { fg = palette.type },
 	["@markup.heading.4.markdown"] = { fg = palette.keyword },
 	["@markup.list.markdown"] = { fg = palette.keyword },
+
+	-- blink
+	["BlinkCmpMenu"] = { bg = background },
+	["BlinkCmpMenuBorder"] = { fg = palette.func },
+	["BlinkCmpItemSelected"] = { bg = palette.func },
+	["Pmenu"] = { bg = background },
+	["NormalFloat"] = { bg = background },
+	["PmenuSel"] = { bg = palette.cursor_line },
     }
     return highlights
 end
