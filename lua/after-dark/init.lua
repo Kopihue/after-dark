@@ -40,6 +40,10 @@ local highlights = function(opts)
 	["Pmenu"] = { bg = background },
 	["NormalFloat"] = { bg = background },
 	["PmenuSel"] = { bg = palette.cursor_line },
+
+	-- HTML, CSS, JS
+	["@tag.delimiter.html"] = { fg = palette.line_number },
+	["@tag.attribute.html"] = { fg = palette.type },
     }
     return highlights
 end
