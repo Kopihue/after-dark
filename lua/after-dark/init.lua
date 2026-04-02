@@ -44,6 +44,7 @@ local highlights = function(opts)
 	-- HTML, CSS, JS
 	["@tag.delimiter.html"] = { fg = palette.line_number },
 	["@tag.attribute.html"] = { fg = palette.type },
+	["Title"] = { fg = palette.crate },
     }
     return highlights
 end
