@@ -34,17 +34,32 @@ local highlights = function(opts)
 	["@markup.list.markdown"] = { fg = palette.keyword },
 
 	-- blink
-	["BlinkCmpMenu"] = { bg = background },
-	["BlinkCmpMenuBorder"] = { fg = palette.func },
-	["BlinkCmpItemSelected"] = { bg = palette.func },
 	["Pmenu"] = { bg = background },
-	["NormalFloat"] = { bg = background },
-	["PmenuSel"] = { bg = palette.cursor_line },
+	["BlinkCmpMenuSelection"] = { bg = palette.cursor_line},
+	["BlinkCmpKind"] = { fg = palette.func },
+	["BlinkCmpKindFunction"] = { fg = palette.keyword },
+	["BlinkCmpKindSnippet"] = { fg = palette.number },
+
+	-- Telescope
+	["TelescopeSelection"] = { bg = palette.cursor_line },
+	["TelescopeResultsBorder"] = { fg = palette.cursor_line },
+	["TelescopeResultsTitle"] = { fg = palette.func },
+	["TelescopePromptBorder"] = { fg = palette.cursor_line },
+	["TelescopePromptTitle"] = { fg = palette.func },
+	["TelescopeSelectionCaret"] = { fg = palette.func },
+	["TelescopePromptPrefix"] = { fg = palette.cursor_line },
+	["TelescopeResultsCount"] = { bg = palette.crate },
 
 	-- HTML, CSS, JS
 	["@tag.delimiter.html"] = { fg = palette.line_number },
 	["@tag.attribute.html"] = { fg = palette.type },
 	["Title"] = { fg = palette.crate },
+
+	-- lsp
+	["DiagnosticSignError"] = { fg = palette.crate },
+	["DiagnosticSignWarn"] = { fg = palette.keyword },
+	["DiagnosticSignHint"] = { fg = palette.func },
+	["DiagnosticSignInfo"] = { fg = palette.number },
     }
     return highlights
 end
