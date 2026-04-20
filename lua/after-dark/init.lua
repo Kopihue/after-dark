@@ -5,6 +5,7 @@ local highlights = function(opts)
     local cursor_line = opts.transparency and "none" or palette.cursor_line
     local bold = opts.bold or false
     local italic = opts.italic or false
+    local cursor_line_number = opts.colored_line_number and palette.func or palette.foreground
 
     local highlights = {
 	["Normal"] = { bg = background },
@@ -23,6 +24,7 @@ local highlights = function(opts)
 	["PreProc"] = { fg = palette.cursor },
 	["CursorLine"] = { bg = cursor_line },
 	["Visual"] = { bg = palette.cursor_line },
+	["CursorLineNr"] = { fg = cursor_line_number },
 
 	-- treesitter
 	["@module.rust"] = { fg = palette.crate },
