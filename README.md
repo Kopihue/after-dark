@@ -22,6 +22,7 @@ require("after-dark").setup({
   transparency = false,
   bold = true,
   italic = true,
+  colored_line_number = false,
 })
 ```
 
