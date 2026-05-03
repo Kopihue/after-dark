@@ -25,6 +25,7 @@ local highlights = function(opts)
 	["CursorLine"] = { bg = cursor_line },
 	["Visual"] = { bg = palette.cursor_line },
 	["CursorLineNr"] = { fg = cursor_line_number },
+	["CurSearch"] = { bg = palette.cursor_line },
 
 	-- treesitter
 	["@module.rust"] = { fg = palette.crate },
