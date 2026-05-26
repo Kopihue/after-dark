@@ -36,6 +36,7 @@ local highlights = function(opts)
 	["@markup.heading.3.markdown"] = { fg = palette.type },
 	["@markup.heading.4.markdown"] = { fg = palette.keyword },
 	["@markup.list.markdown"] = { fg = palette.keyword },
+	["@type.builtin.c"] = { fg = palette.crate },
 
 	-- blink
 	["Pmenu"] = { bg = background },
