@@ -11,9 +11,9 @@ local highlights = function(opts)
 	["Normal"] = { bg = background },
 	["Statement"] = { fg = palette.keyword },
 	["@variable"] = { fg = palette.type },
-	["Function"] = { fg = palette.func, italic = italic },
+	["Function"] = { fg = palette.func, bold = bold },
 	["Special"] = { fg = palette.func },
-	["String"] = { fg = palette.string },
+	["String"] = { fg = palette.string, italic = italic },
 	["Operator"] = { fg = palette.keyword },
 	["Comment"] = { fg = palette.comment, italic = italic },
 	["Constant"] = { fg = palette.number },
@@ -27,6 +27,7 @@ local highlights = function(opts)
 	["CursorLineNr"] = { fg = cursor_line_number },
 	["CurSearch"] = { bg = palette.cursor_line },
 	["Search"] = { bg = palette.cursor_line },
+	["Identifier"] = { fg = palette.keyword },
 
 	-- treesitter
 	["@module.rust"] = { fg = palette.crate },
@@ -51,9 +52,11 @@ local highlights = function(opts)
 	["TelescopeResultsTitle"] = { fg = palette.func },
 	["TelescopePromptBorder"] = { fg = palette.cursor_line },
 	["TelescopePromptTitle"] = { fg = palette.func },
+	["TelescopePromptNormal"] = { fg = palette.crate },
 	["TelescopeSelectionCaret"] = { fg = palette.func },
-	["TelescopePromptPrefix"] = { fg = palette.cursor_line },
 	["TelescopeResultsCount"] = { bg = palette.crate },
+	["TelescopePreviewTitle"] = { fg = palette.func },
+	["TelescopePreviewBorder"] = { fg = palette.cursor_line },
 
 	-- HTML, CSS, JS
 	["@tag.delimiter.html"] = { fg = palette.line_number },
@@ -65,6 +68,18 @@ local highlights = function(opts)
 	["DiagnosticSignWarn"] = { fg = palette.keyword },
 	["DiagnosticSignHint"] = { fg = palette.func },
 	["DiagnosticSignInfo"] = { fg = palette.number },
+
+	-- C
+	["@type.builtin.c"] = { fg = palette.crate, italic = italic },
+	["@keyword.import.c"] = { fg = palette.keyword, italic = italic, },
+
+	-- python
+	["@variable.builtin.python"] = { fg = palette.crate, italic = italic },
+
+	-- netrw
+	["netrwPlain"] = { fg = palette.crate },
+	["netrwDir"] = { fg = palette.keyword },
+	["netrwExe"] = { fg = palette.func },
     }
     return highlights
 end
